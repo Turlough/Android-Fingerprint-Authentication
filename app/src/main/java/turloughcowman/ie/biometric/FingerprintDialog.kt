@@ -16,7 +16,7 @@ import javax.crypto.KeyGenerator
 import javax.crypto.SecretKey
 
 
-class BiometricDialog(context: Context, val onSuccess: ()->Unit?, val onFailure: (String)->Unit?) : BottomSheetDialog(context) {
+class FingerprintDialog(context: Context, val onSuccess: ()->Unit?, val onFailure: (String)->Unit?) : BottomSheetDialog(context) {
 
     private val keyName = "userName"
     private val provider = "AndroidKeyStore"

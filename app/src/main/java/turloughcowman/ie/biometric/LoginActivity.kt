@@ -68,7 +68,7 @@ class LoginActivity : AppCompatActivity() {
     private fun hideCredentialView() {
         mViewModel.waiting.value = false
         showLogin(false)
-        BiometricDialog(this, this::onBiometricSuccess, this::onBiometricFailure).show()
+        FingerprintDialog(this, this::onBiometricSuccess, this::onBiometricFailure).show()
     }
 
     private fun setUpCredentialView() {
