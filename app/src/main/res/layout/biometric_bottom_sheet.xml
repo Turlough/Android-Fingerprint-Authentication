@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <include layout="@layout/biometric_dialog_heading" />
+
+    <TextView
+        android:id="@+id/item_description"
+        style="@style/dialog_comment_style"
+        android:text="@string/place_your_finger_on_the_reader_to_authenticate" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_description"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:gravity="center"
+        android:textColor="@color/dialog_status" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/dialog_button_style"
+        android:layout_below="@+id/tvStatus"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
+
